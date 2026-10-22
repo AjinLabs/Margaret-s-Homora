@@ -113,8 +113,16 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   // Load from localStorage on mount
   useEffect(() => {
     try {
-      const savedProducts = localStorage.getItem('mh_products');
-      if (savedProducts) setProducts(JSON.parse(savedProducts));
+      const CATALOG_VERSION = 'v4_exact_catalog_photos';
+      const savedVersion = localStorage.getItem('mh_catalog_version');
+      if (savedVersion !== CATALOG_VERSION) {
+        localStorage.setItem('mh_catalog_version', CATALOG_VERSION);
+        localStorage.setItem('mh_products', JSON.stringify(INITIAL_PRODUCTS));
+        setProducts(INITIAL_PRODUCTS);
+      } else {
+        const savedProducts = localStorage.getItem('mh_products');
+        if (savedProducts) setProducts(JSON.parse(savedProducts));
+      }
 
       const savedCategories = localStorage.getItem('mh_categories');
       if (savedCategories) setCategories(JSON.parse(savedCategories));

@@ -74,8 +74,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/red-heart-cup-saucer.jpg",
       "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Charming ruby red heart-shaped ceramic cup with delicate white micro-hearts and matching scalloped petal saucer. Crafted with love for romantic morning sips.",
     materials: "Artisanal glazed stoneware, food-grade non-toxic glaze",
@@ -102,8 +102,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/cherry-cup-saucer.jpg",
       "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Whimsical hand-painted ripe red cherry botanical sprigs over warm ivory porcelain with an organic wavy saucer rim. Subtle French cottagecore luxury.",
     materials: "Semi-matte white ceramic stoneware",
@@ -130,8 +130,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/panda-cup-saucer.jpg",
       "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Adorable 3D sculpted ceramic panda face mug with raised ears and matching paw-printed ceramic saucer. Delightful gift for tea lovers of all ages.",
     materials: "High-grade porcelain stoneware",
@@ -158,8 +158,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Bowls",
     images: [
+      "/images/products/green-chinese-bowl.jpg",
       "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Cylindrical straight-walled studio bowl in soothing pastel sage green with delicate hand-painted daisy florals. Perfect for morning grains, soups, and desserts.",
     materials: "Stoneware clay with satin food-safe glaze",
@@ -186,8 +186,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Bowls",
     images: [
+      "/images/products/blue-white-chinese-bowl.jpg",
       "https://images.unsplash.com/photo-1572119865084-43c285814d63?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Vibrant Mediterranean cerulean blue interior glaze with clean white exterior and floral motifs. Brings coastal serenity to daily dining.",
     materials: "High-fire vitrified ceramic",
@@ -213,8 +213,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Bowls",
     images: [
+      "/images/products/yellow-chinese-bowl.jpg",
       "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Cheerful warm saffron yellow interior with white floral embellishments. Fired for superior thermal insulation and chip resistance.",
     materials: "Stoneware clay with high-gloss interior glaze",
@@ -241,8 +241,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/mughal-print-cup.jpg",
       "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Classic cobalt blue and ivory hand-painted Mughal floral motif on fine ceramic. Features intricate royal symmetry and a comfortable rounded ear handle for daily tea and coffee moments.",
     materials: "High-fire stoneware ceramic, non-toxic lead-free glaze",
@@ -269,8 +269,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/red-floral-folk-mug.jpg",
       "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Delicate Indian folk botanical motif in rich ruby red and warm saffron yellow dots against a creamy matte base. Brings joyful warmth to your breakfast table.",
     materials: "Artisanal glazed stoneware",
@@ -297,8 +297,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/honey-bee-mug.jpg",
       "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Tactile raised honeycomb dots and hand-painted miniature honey bees with a golden-textured handle. A playful, whimsical luxury piece loved by nature enthusiasts.",
     materials: "Semi-matte white clay stoneware with textured relief",
@@ -325,8 +325,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Tea & Coffee Sets",
     images: [
+      "/images/products/kettle-mug-mini.jpg",
       "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Clever space-saving all-in-one individual tea set. The mini teapot rests snugly atop its matching mug, infusing single-serve loose leaf tea in peaceful solitude.",
     materials: "Glazed ceramic with brass lid knob",
@@ -353,8 +353,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Tea & Coffee Sets",
     images: [
+      "/images/products/kettle-mug-botanical.jpg",
       "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Stackable kettle and mug set featuring monochrome Scandinavian forest pine and botanical block print engravings. Elegantly balances craft with everyday functionality.",
     materials: "Natural stoneware, food-grade charcoal glaze",
@@ -380,8 +380,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Tea & Coffee Sets",
     images: [
+      "/images/products/coffee-set-tray-790.jpg",
       "https://images.unsplash.com/photo-1520986606214-8b456906c813?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Complete royal blue and white geometric coffee service including an elegant tall teapot with lid, two matching flared cups, and an acacia wooden serving tray.",
     materials: "Glazed porcelain ceramic & natural acacia wood",
@@ -408,8 +408,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Tea & Coffee Sets",
     images: [
+      "/images/products/coffee-set-deluxe-6pc.jpg",
       "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1520986606214-8b456906c813?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Comprehensive English afternoon tea set in dusty rose glaze with champagne gold rims. Includes 2 cups with scalloped saucers, dedicated milk creamer pitcher, lidded sugar jar, and large teapot.",
     materials: "Fine bone china ceramic with gilded 18k style rim lustre",
@@ -437,8 +437,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Tea & Coffee Sets",
     images: [
+      "/images/products/coffee-set-4cups-tray.jpg",
       "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Designed for family gatherings and weekend brunch. Includes four speckled sand stoneware mugs, a high-capacity matching kettle, and an integrated ceramic serving platter with raised handles.",
     materials: "Dense iron-rich stoneware with organic speckled reduction glaze",
@@ -464,8 +464,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Tea & Coffee Sets",
     images: [
+      "/images/products/ceramic-chai-set.jpg",
       "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Reimagining the beloved Indian roadside cutting chai stall with studio ceramic luxury. Six flared cutting chai tumblers glazed in dual-tone lavender terracotta held in a rustic hand-bent wire caddy.",
     materials: "Terracotta ceramic with food-grade glaze, powder-coated brass stand",
@@ -492,8 +492,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/flower-cups.jpg",
       "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Hand-sculpted raised ceramic petal detailing wrapping around a broad latte cup. Features soft pastel petal blush and tiny moss-green bud accents.",
     materials: "High-fire white stoneware",
@@ -520,8 +520,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/deer-design-cups.jpg",
       "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Charming woodland aesthetic featuring rust-orange and cerulean deer leaping through autumn pine needles. Set includes two complementary illustrated cups.",
     materials: "Earthenware with lead-free gloss glaze",
@@ -547,8 +547,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/traditional-ceramic-cups.jpg",
       "https://images.unsplash.com/photo-1572119865084-43c285814d63?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Rounded artisanal belly cups with dip-glazed deep ocean blue over exposed natural sand bottom. Perfect for traditional filter coffee or herbal decoctions.",
     materials: "Kerala pottery clay with semi-gloss dip glaze",
@@ -573,8 +573,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/tea-chai-cup.jpg",
       "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Fluted tapered silhouette with vertical flutes providing a satisfying grip. Finished in a soft celadon sage and terracotta rim.",
     materials: "Hand-pressed earthenware",
@@ -599,8 +599,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/ceramic-cup-3inch.jpg",
       "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Classic straight-walled 3-inch ceramic mug with hand-stamped indigo ditsy floral sprigs. Light, comfortable, and timeless.",
     materials: "Stoneware clay",
@@ -626,8 +626,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/mini-ceramic-cup-2inch.jpg",
       "https://images.unsplash.com/photo-1572119865084-43c285814d63?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Petite 2-inch handle cup finished in vibrant Mediterranean turquoise reactive glaze. Ideal for espresso shots, cortados, condiments, or dipping oils.",
     materials: "Glazed stoneware ceramic",
@@ -652,8 +652,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/dark-blue-slanted-cup.jpg",
       "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Sleek tapered conical mug with angled facets in deep midnight blue gloss. Modern European minimalist silhouette.",
     materials: "Vitrified ceramic",
@@ -678,8 +678,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/dark-blue-straight-cup.jpg",
       "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Cylindrical Nordic coffee mug in uniform deep sapphire blue with an ergonomic squared handle. Solid and comforting in the hand.",
     materials: "Ceramic stoneware",
@@ -705,8 +705,8 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: "ceramics-tableware",
     subCategory: "Mugs & Cups",
     images: [
+      "/images/products/ceramic-coffee-closable-cap.jpg",
       "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
     ],
     description: "Eco-friendly reusable travel tumbler sculpted from double-walled insulating ceramic. Comes with a food-grade spill-resistant closable sipping lid and embossed silicone thermal grip band.",
     materials: "Double-walled ceramic, BPA-free food-grade silicone",
