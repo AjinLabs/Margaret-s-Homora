@@ -89,21 +89,26 @@ export default function Header() {
 
         {/* Brand Logo & Wordmark */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border border-[#D6C0A6] shadow-sm flex-shrink-0">
+          <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-full overflow-hidden border border-[#D6C0A6] shadow-sm flex-shrink-0 bg-white">
             <Image
-              src="/images/logo.jpg"
-              alt="Margaret's Homora"
+              src="/images/logo.png"
+              alt="Margaret's HOMORA Ceramic Home & Living"
               fill
               className="object-cover group-hover:scale-105 transition-transform"
               priority
             />
           </div>
           <div className="flex flex-col">
-            <span className="font-serif text-lg sm:text-2xl font-normal tracking-wider uppercase text-[#2C221E]">
-              Margaret&apos;s Homora
-            </span>
-            <span className="text-[9px] sm:text-[10px] tracking-[0.2em] uppercase text-[#82926E] font-medium -mt-1">
-              Atelier & Home Living
+            <div className="flex items-baseline gap-1.5 leading-none">
+              <span className="font-serif italic text-sm sm:text-base text-[#5F6B4F]">
+                Margaret&apos;s
+              </span>
+              <span className="font-serif font-bold text-lg sm:text-2xl tracking-[0.14em] uppercase text-[#2C221E]">
+                HOMORA
+              </span>
+            </div>
+            <span className="text-[8px] sm:text-[9.5px] tracking-[0.22em] uppercase text-[#82926E] font-semibold mt-1">
+              Ceramic Home &amp; Living
             </span>
           </div>
         </Link>
@@ -198,12 +203,17 @@ export default function Header() {
           <div className="relative w-4/5 max-w-xs bg-[#FAF7F2] h-full shadow-2xl flex flex-col p-6 z-10 overflow-y-auto">
             <div className="flex items-center justify-between pb-4 border-b border-[#EAE2D7]">
               <div className="flex items-center gap-2.5">
-                <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#D6C0A6]">
-                  <Image src="/images/logo.jpg" alt="Logo" fill className="object-cover" />
+                <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#D6C0A6] bg-white">
+                  <Image src="/images/logo.png" alt="Logo" fill className="object-cover" />
                 </div>
-                <span className="font-serif font-medium text-sm text-[#2C221E]">
-                  Margaret&apos;s Homora
-                </span>
+                <div className="flex flex-col">
+                  <span className="font-serif font-bold text-xs tracking-wider uppercase text-[#2C221E]">
+                    Margaret&apos;s HOMORA
+                  </span>
+                  <span className="text-[8px] tracking-wider uppercase text-[#82926E] font-medium">
+                    Ceramic Home &amp; Living
+                  </span>
+                </div>
               </div>
               <button
                 onClick={() => setMobileMenuOpen(false)}

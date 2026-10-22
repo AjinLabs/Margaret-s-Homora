@@ -182,12 +182,17 @@ export default function CheckoutPage() {
       {/* Minimal Luxury Checkout Header */}
       <header className="border-b border-[#EAE2D7] bg-white py-4 px-4 sm:px-8 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#D6C0A6]">
-            <Image src="/images/logo.jpg" alt="Logo" fill className="object-cover" />
+          <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#D6C0A6] bg-white">
+            <Image src="/images/logo.png" alt="Logo" fill className="object-cover" />
           </div>
-          <span className="font-serif text-lg font-normal tracking-wider uppercase text-[#2C221E]">
-            Margaret&apos;s Homora
-          </span>
+          <div className="flex flex-col">
+            <span className="font-serif font-bold text-sm tracking-wider uppercase text-[#2C221E]">
+              Margaret&apos;s HOMORA
+            </span>
+            <span className="text-[8px] tracking-wider uppercase text-[#82926E] font-medium">
+              Ceramic Home &amp; Living
+            </span>
+          </div>
         </Link>
         <div className="flex items-center gap-2 text-xs text-[#5F6B4F]">
           <Lock className="w-3.5 h-3.5" />

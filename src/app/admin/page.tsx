@@ -124,17 +124,17 @@ export default function AdminDashboardPage() {
     return (
       <div className="min-h-screen bg-[#FAF7F2] flex items-center justify-center p-4">
         <div className="w-full max-w-md bg-white rounded-2xl border border-[#EAE2D7] shadow-xl p-8 space-y-6">
-          <div className="text-center space-y-2">
-            <div className="relative w-14 h-14 rounded-full overflow-hidden border border-[#D6C0A6] mx-auto shadow-sm">
-              <Image src="/images/logo.jpg" alt="Logo" fill className="object-cover" />
+            <div className="relative w-16 h-16 rounded-full overflow-hidden border border-[#D6C0A6] mx-auto shadow-sm bg-white">
+              <Image src="/images/logo.png" alt="Logo" fill className="object-cover" />
             </div>
-            <h1 className="font-serif text-2xl text-[#2C221E] font-normal">
-              Margaret&apos;s Homora
-            </h1>
-            <p className="text-xs text-[#5F6B4F] uppercase tracking-widest font-semibold">
-              Private Atelier Admin Portal
-            </p>
-          </div>
+            <div className="space-y-0.5">
+              <h1 className="font-serif text-2xl font-bold tracking-wider uppercase text-[#2C221E]">
+                Margaret&apos;s HOMORA
+              </h1>
+              <p className="text-[10px] text-[#5F6B4F] uppercase tracking-[0.2em] font-semibold">
+                Ceramic Home &amp; Living • Admin Portal
+              </p>
+            </div>
 
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
@@ -325,15 +325,15 @@ export default function AdminDashboardPage() {
         <div className="space-y-6">
           {/* Brand header */}
           <div className="flex items-center gap-3 px-2">
-            <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#D6C0A6]">
-              <Image src="/images/logo.jpg" alt="Logo" fill className="object-cover" />
+            <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#D6C0A6] bg-white flex-shrink-0">
+              <Image src="/images/logo.png" alt="Logo" fill className="object-cover" />
             </div>
-            <div>
-              <h2 className="font-serif font-medium text-sm text-[#2C221E]">
-                Margaret&apos;s Homora
+            <div className="flex flex-col">
+              <h2 className="font-serif font-bold text-xs tracking-wider uppercase text-[#2C221E]">
+                Margaret&apos;s HOMORA
               </h2>
-              <span className="text-[10px] text-[#5F6B4F] uppercase tracking-wider font-semibold block">
-                Atelier Backoffice
+              <span className="text-[8px] text-[#5F6B4F] uppercase tracking-wider font-semibold">
+                Ceramic Home &amp; Living
               </span>
             </div>
           </div>

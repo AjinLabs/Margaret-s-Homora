@@ -26,12 +26,17 @@ export default function Footer() {
           {/* Col 1: Brand Atelier */}
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#D6C0A6]">
-                <Image src="/images/logo.jpg" alt="Logo" fill className="object-cover" />
+              <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#D6C0A6] bg-white">
+                <Image src="/images/logo.png" alt="Margaret's HOMORA" fill className="object-cover" />
               </div>
-              <span className="font-serif text-lg tracking-wide uppercase text-[#2C221E]">
-                The Atelier
-              </span>
+              <div className="flex flex-col">
+                <span className="font-serif font-bold text-sm tracking-widest uppercase text-[#2C221E]">
+                  Margaret&apos;s HOMORA
+                </span>
+                <span className="text-[8px] tracking-[0.2em] uppercase text-[#82926E] font-medium">
+                  Ceramic Home &amp; Living
+                </span>
+              </div>
             </div>
             <p className="text-xs text-stone-600 leading-relaxed">
               Rooted in coastal heritage and ceramic sanctuaries of Kerala, India. We engineer quiet luxury for dining rooms and curated living spaces with organic clays, terracotta, and wood-ash mineral glazes.
