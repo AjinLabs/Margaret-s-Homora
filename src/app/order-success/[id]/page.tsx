@@ -68,7 +68,7 @@ export default function OrderSuccessPage({
 
   const getWhatsAppReceiptLink = () => {
     const text = `Hello Margaret's Homora! 🌸%0AI have placed Order *${order.orderNumber}* for ₹${order.total.toLocaleString('en-IN')}.%0ACustomer: ${order.customer.fullName}%0APlease share tracking updates to this WhatsApp number.`;
-    const phone = settings.whatsappNumber.replace(/[^0-9]/g, '');
+    const phone = (settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613';
     return `https://wa.me/${phone}?text=${text}`;
   };
 

@@ -82,15 +82,15 @@ export default function ContactPage() {
                 <h4 className="font-serif text-base font-semibold">Instant WhatsApp Chat</h4>
               </div>
               <p className="text-xs text-stone-700 leading-relaxed">
-                Need immediate photographs of available glaze batches or custom colorways? Message our Fort Kochi team directly.
+                Need immediate photographs of available glaze batches or custom colorways? Message our Pudukad, Thrissur atelier team directly at +91 70125 43613.
               </p>
               <a
-                href={`https://wa.me/${settings.whatsappNumber.replace(/[^0-9]/g, '')}`}
+                href={`https://wa.me/${(settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613'}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-semibold rounded-lg shadow-sm transition-colors"
               >
-                <span>Open WhatsApp Chat</span>
+                <span>Chat on WhatsApp (+91 70125 43613)</span>
               </a>
             </div>
           </div>

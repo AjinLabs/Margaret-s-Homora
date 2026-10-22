@@ -270,7 +270,7 @@ export default function TrackOrderPage() {
                 Please double-check your order number from your confirmation email or contact our studio on WhatsApp for immediate help.
               </p>
               <a
-                href={`https://wa.me/${settings.whatsappNumber.replace(/[^0-9]/g, '')}`}
+                href={`https://wa.me/${(settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613'}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366]/10 text-[#128C7E] border border-[#25D366]/30 rounded-lg text-xs font-semibold"

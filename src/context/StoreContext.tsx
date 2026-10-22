@@ -113,15 +113,19 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
   // Load from localStorage on mount
   useEffect(() => {
     try {
-      const CATALOG_VERSION = 'v4_exact_catalog_photos';
+      const CATALOG_VERSION = 'v5_pudukad_whatsapp_update';
       const savedVersion = localStorage.getItem('mh_catalog_version');
       if (savedVersion !== CATALOG_VERSION) {
         localStorage.setItem('mh_catalog_version', CATALOG_VERSION);
         localStorage.setItem('mh_products', JSON.stringify(INITIAL_PRODUCTS));
         setProducts(INITIAL_PRODUCTS);
+        localStorage.setItem('mh_settings', JSON.stringify(INITIAL_SETTINGS));
+        setSettings(INITIAL_SETTINGS);
       } else {
         const savedProducts = localStorage.getItem('mh_products');
         if (savedProducts) setProducts(JSON.parse(savedProducts));
+        const savedSettings = localStorage.getItem('mh_settings');
+        if (savedSettings) setSettings(JSON.parse(savedSettings));
       }
 
       const savedCategories = localStorage.getItem('mh_categories');
@@ -138,9 +142,6 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
 
       const savedOrders = localStorage.getItem('mh_orders');
       if (savedOrders) setOrders(JSON.parse(savedOrders));
-
-      const savedSettings = localStorage.getItem('mh_settings');
-      if (savedSettings) setSettings(JSON.parse(savedSettings));
 
       const savedAdmin = localStorage.getItem('mh_admin_auth');
       if (savedAdmin === 'true') setIsAdminAuthenticated(true);

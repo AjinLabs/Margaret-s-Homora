@@ -46,7 +46,7 @@ export default function QuickViewModal({ product, onClose }: QuickViewModalProps
 
   const getWhatsAppProductLink = () => {
     const text = `Hello Margaret's Homora! 🌸%0AI am interested in purchasing the *${product.name}* (SKU: ${product.sku}, Price: ₹${product.price}).%0APlease let me know delivery timelines.`;
-    const phone = settings.whatsappNumber.replace(/[^0-9]/g, '');
+    const phone = (settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613';
     return `https://wa.me/${phone}?text=${text}`;
   };
 

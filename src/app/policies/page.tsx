@@ -33,7 +33,7 @@ export default function PoliciesPage() {
           </div>
           <div className="text-xs sm:text-sm text-stone-600 space-y-2.5 leading-relaxed">
             <p>
-              • <strong>Courier Dispatch:</strong> Orders are hand-inspected and dispatched within 24 to 48 business hours from our Fort Kochi kiln studio via reputable couriers (Blue Dart Express, DTDC, Delhivery).
+              • <strong>Courier Dispatch:</strong> Orders are hand-inspected and dispatched within 24 to 48 business hours from our Pudukad, Thrissur kiln studio via reputable couriers (Blue Dart Express, DTDC, Delhivery).
             </p>
             <p>
               • <strong>Transit Timeline:</strong> South India deliveries typically arrive in 2–4 business days. Other metro cities (Mumbai, Delhi, Kolkata, Bengaluru, Pune) take 3–5 business days. Remote locations may take up to 6–7 days.

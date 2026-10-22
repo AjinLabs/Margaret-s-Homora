@@ -24,6 +24,8 @@ export interface Product {
   tags: string[];
   status: 'active' | 'draft' | 'archived';
   threeDType?: 'vase' | 'cup' | 'bowl' | 'pitcher'; // For 3D canvas interaction
+  videoUrl?: string; // Product showcase video (mp4, webm, or embed)
+  videos?: string[]; // Product video gallery
 }
 
 export interface Category {

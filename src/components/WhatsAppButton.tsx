@@ -6,7 +6,7 @@ import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppButton() {
   const { settings } = useStore();
-  const phone = settings.whatsappNumber.replace(/[^0-9]/g, '');
+  const phone = (settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613';
   const message = encodeURIComponent(
     "Hello Margaret's Homora! 🌸 I am browsing your online atelier and would love assistance with product details and bespoke gifting."
   );

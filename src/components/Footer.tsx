@@ -169,7 +169,7 @@ export default function Footer() {
             <div className="pt-5 flex items-center gap-3">
               <span className="text-xs text-stone-500">Connect:</span>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/margarets_homora"
                 target="_blank"
                 rel="noreferrer"
                 className="text-stone-600 hover:text-[#2C221E] text-xs transition-colors flex items-center gap-1"
@@ -177,9 +177,14 @@ export default function Footer() {
                 <Camera className="w-3.5 h-3.5" /> Instagram
               </a>
               <span className="text-stone-300">•</span>
-              <Link href="/about" className="text-stone-600 hover:text-[#2C221E] text-xs transition-colors">
-                Studio Journal
-              </Link>
+              <a
+                href={`https://wa.me/${(settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613'}`}
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#25D366] hover:text-[#128C7E] text-xs font-semibold transition-colors flex items-center gap-1"
+              >
+                WhatsApp (+91 70125 43613)
+              </a>
             </div>
           </div>
         </div>

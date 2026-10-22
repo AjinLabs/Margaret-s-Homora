@@ -625,12 +625,12 @@ export default function AdminDashboardPage() {
                     Add handcrafted designs, adjust stock numbers, manage sale prices and glaze tones.
                   </p>
                 </div>
-                <button
-                  onClick={openCreateProduct}
+                <Link
+                  href="/admin/products/new"
                   className="px-4 py-2.5 bg-[#2C221E] hover:bg-[#3E3029] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-colors flex items-center gap-2 shadow-sm"
                 >
                   <Plus className="w-4 h-4" /> Add New Ceramic Piece
-                </button>
+                </Link>
               </div>
 
               {/* Products Table */}

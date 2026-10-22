@@ -73,7 +73,7 @@ export default function CartDrawer() {
       'en-IN'
     )}%0A%0APlease let me know the availability and delivery details. Thank you!`;
 
-    const phone = settings.whatsappNumber.replace(/[^0-9]/g, '');
+    const phone = (settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613';
     return `https://wa.me/${phone}?text=${message}`;
   };
 

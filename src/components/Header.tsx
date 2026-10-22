@@ -294,7 +294,7 @@ export default function Header() {
                 Owner Admin Dashboard
               </Link>
               <p className="text-[10px] text-center text-[#82926E] mt-3">
-                Handcrafted with care in Kerala • Fort Kochi Kilns
+                Handcrafted with care in Kerala • Pudukad Kilns
               </p>
             </div>
           </div>

@@ -29,6 +29,7 @@ import {
   Check,
   ChevronRight,
   Sparkles,
+  Play,
 } from 'lucide-react';
 
 export default function ProductDetailPage({
@@ -53,6 +54,7 @@ export default function ProductDetailPage({
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [show3D, setShow3D] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
   const [activeTab, setActiveTab] = useState<'details' | 'care' | 'shipping' | 'reviews'>('details');
   const [isAdded, setIsAdded] = useState(false);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
@@ -118,7 +120,7 @@ export default function ProductDetailPage({
 
   const getWhatsAppProductLink = () => {
     const message = `Hello Margaret's Homora! 🌸%0AI would like to order the *${product.name}* (Price: ₹${product.price}, SKU: ${product.sku}).%0APlease let me know delivery estimate for my address.`;
-    const phone = settings.whatsappNumber.replace(/[^0-9]/g, '');
+    const phone = (settings.whatsappNumber || '').replace(/[^0-9]/g, '') || '917012543613';
     return `https://wa.me/${phone}?text=${message}`;
   };
 
@@ -158,7 +160,16 @@ export default function ProductDetailPage({
           {/* Left: Images & 3D Interactive Canvas */}
           <div className="lg:col-span-7 space-y-4">
             <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-white border border-[#EAE2D7] shadow-sm">
-              {show3D ? (
+              {showVideo && product.videoUrl ? (
+                <div className="w-full h-full bg-stone-900 flex items-center justify-center">
+                  <video
+                    src={product.videoUrl}
+                    controls
+                    autoPlay
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              ) : show3D ? (
                 <div className="w-full h-full bg-gradient-to-br from-[#FAF7F2] to-[#EFE4D6]">
                   <Ceramic3DViewer
                     modelType={product.threeDType || 'vase'}
@@ -205,14 +216,32 @@ export default function ProductDetailPage({
                 )}
               </div>
 
-              {/* 3D Switch Button */}
-              <button
-                onClick={() => setShow3D(!show3D)}
-                className="absolute bottom-4 left-4 z-10 bg-[#2C221E]/90 hover:bg-[#2C221E] text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg flex items-center gap-2 backdrop-blur-sm transition-all"
-              >
-                <RotateCw className="w-4 h-4" />
-                <span>{show3D ? 'View Still Photos' : 'Open 3D Studio Turntable'}</span>
-              </button>
+              {/* Media Switch Buttons (3D Turntable & Video) */}
+              <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2">
+                <button
+                  onClick={() => {
+                    setShow3D(!show3D);
+                    setShowVideo(false);
+                  }}
+                  className="bg-[#2C221E]/90 hover:bg-[#2C221E] text-white text-xs font-medium px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 backdrop-blur-sm transition-all"
+                >
+                  <RotateCw className="w-3.5 h-3.5" />
+                  <span>{show3D ? 'View Photos' : '3D Studio'}</span>
+                </button>
+
+                {product.videoUrl && (
+                  <button
+                    onClick={() => {
+                      setShowVideo(!showVideo);
+                      setShow3D(false);
+                    }}
+                    className="bg-emerald-800/90 hover:bg-emerald-800 text-white text-xs font-medium px-3.5 py-2 rounded-full shadow-lg flex items-center gap-1.5 backdrop-blur-sm transition-all"
+                  >
+                    <Play className="w-3.5 h-3.5 fill-current" />
+                    <span>{showVideo ? 'View Photos' : 'Watch Video'}</span>
+                  </button>
+                )}
+              </div>
 
               {/* Share Button */}
               <button
@@ -229,7 +258,7 @@ export default function ProductDetailPage({
             </div>
 
             {/* Thumbnail selector */}
-            {!show3D && product.images.length > 1 && (
+            {!show3D && !showVideo && product.images.length > 1 && (
               <div className="flex gap-3 overflow-x-auto pb-2">
                 {product.images.map((img, i) => (
                   <button
