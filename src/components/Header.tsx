@@ -12,7 +12,6 @@ import {
   X,
   Phone,
   Sparkles,
-  ShieldCheck,
   ChevronRight,
 } from 'lucide-react';
 
@@ -59,10 +58,10 @@ export default function Header() {
           </Link>
           <span className="text-[#D6C0A6]">•</span>
           <Link
-            href="/admin"
-            className="text-[#82926E] hover:text-[#2C221E] font-medium flex items-center gap-1 transition-colors"
+            href="/contact"
+            className="hover:text-[#2C221E] transition-colors flex items-center gap-1"
           >
-            <ShieldCheck className="w-3 h-3" /> Admin Portal
+            Studio Inquiry
           </Link>
         </div>
       </div>
@@ -283,19 +282,16 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Admin Portal Quick Access */}
-            <div className="pt-6 mt-auto">
-              <Link
-                href="/admin"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full flex items-center justify-center gap-2 bg-[#F4EFEA] hover:bg-[#EFE4D6] text-[#2C221E] py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider border border-[#EAE2D7] transition-colors"
-              >
-                <ShieldCheck className="w-4 h-4 text-[#5F6B4F]" />
-                Owner Admin Dashboard
-              </Link>
-              <p className="text-[10px] text-center text-[#82926E] mt-3">
-                Handcrafted with care in Kerala • Pudukad Kilns
-              </p>
+            {/* Atelier Signature */}
+            <div className="pt-6 mt-auto border-t border-[#EAE2D7]">
+              <div className="text-center space-y-1">
+                <p className="font-serif text-xs font-semibold text-[#2C221E] uppercase tracking-wider">
+                  Margaret&apos;s Homora Atelier
+                </p>
+                <p className="text-[10px] text-[#82926E]">
+                  Handcrafted with care in Kerala • Pudukad Kilns
+                </p>
+              </div>
             </div>
           </div>
         </div>

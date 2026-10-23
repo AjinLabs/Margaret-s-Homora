@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useStore } from '@/context/StoreContext';
-import { ArrowRight, Check, Heart, ShieldCheck, Camera } from 'lucide-react';
+import { ArrowRight, Check, Heart, Camera } from 'lucide-react';
 
 export default function Footer() {
   const { settings } = useStore();
@@ -121,8 +121,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/admin" className="text-[#82926E] hover:text-[#2C221E] flex items-center gap-1 font-medium">
-                  <ShieldCheck className="w-3.5 h-3.5" /> Atelier Owner Portal
+                <Link href="/contact" className="hover:text-[#2C221E] transition-colors">
+                  Studio Kiln Visits &amp; Bespoke Commissions
                 </Link>
               </li>
             </ul>
@@ -191,7 +191,18 @@ export default function Footer() {
 
         {/* Bottom Sub-bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-4">
-          <p>© {new Date().getFullYear()} Margaret&apos;s Homora Atelier Kerala. Handcrafted for deliberate living.</p>
+          <div className="flex items-center gap-2.5">
+            <p>© {new Date().getFullYear()} Margaret&apos;s Homora Atelier Kerala. Handcrafted for deliberate living.</p>
+            {/* Discreet Atelier Portal Access Icon */}
+            <Link
+              href="/admin"
+              title="Atelier Internal Portal"
+              aria-label="Atelier Internal Portal"
+              className="w-5 h-5 rounded-full border border-stone-300 hover:border-[#5F6B4F] text-stone-400 hover:text-[#5F6B4F] flex items-center justify-center text-[10px] font-serif transition-all hover:scale-110 select-none shadow-2xs"
+            >
+              A
+            </Link>
+          </div>
 
           {/* Payment Badges */}
           <div className="flex flex-wrap items-center gap-2">
